@@ -1,22 +1,21 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    <br />
+    <h3>已经引入了jQuery和BootStrap</h3>
+    <br />
+    <div>
+      <img src="../assets/icon_jquery.png" />
+      <img src="../assets/icon_bootstrap.png" />
+    </div>
+    <h2>开始构建你的Web吧</h2>
+    <br />
+    <div>
+      <div id="alert" class="alert alert-success alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <strong>Success!</strong> 成功引入BootStrap Alert组件.
+      </div>
+    </div>
   </div>
 </template>
 
@@ -49,5 +48,14 @@ li {
 
 a {
   color: #42b983;
+}
+
+img {
+  width: 160px;
+}
+
+#alert {
+  margin: 0 auto;
+  width: 500px;
 }
 </style>
