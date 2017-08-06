@@ -1,6 +1,6 @@
 <template>
     <div id="chartsBox">
-        <button id="btn_close">
+        <button id="btn_close" @click="hiddenChart">
             <span>×</span>
         </button>
         <div id="main"  :style="{width:'100%',height:'100%'}"></div>
@@ -11,8 +11,14 @@
 import echarts from "echarts"
 export default {
     name:"TestChart",
+    props:["chartDis"],
     data(){
         return {
+        }
+    },
+    methods:{
+        hiddenChart(){
+            this.$router.push("/");
         }
     },
     mounted(){
@@ -70,34 +76,34 @@ export default {
 </script>
 
 <style scoped>
-#chartsBox {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: #000;
-}
-#btn_close {
-    position: absolute;
-    right: 10px;
+    #chartsBox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
-    background-color: 0;
-    padding: 0;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    z-index: 99
-}
-#btn_close:active,:focus {
-    outline: none;
-}
-#btn_close span {
-    font-size: 32px;
-    color: #fff;
-    line-height: 32px;
-}
-#btn_close :hover {
-    color: red;
-}
+    left: 0;
+    background-color: #000;
+    }
+    #btn_close {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        background-color: 0;
+        padding: 0;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 99
+    }
+    #btn_close:active,#btn_close:focus {
+        outline: none;
+    }
+    #btn_close span {
+        font-size: 32px;
+        color: #fff;
+        line-height: 32px;
+    }
+    #btn_close :hover {
+        color: red;
+    }
 </style>
 

@@ -16,7 +16,10 @@
         <strong>Success!</strong> 成功引入BootStrap Alert组件.
       </div>
     </div>
-    <TestChart />
+    <br>
+    <button id="btn_show" type="button" class="btn btn-default" @click="showChart">show echarts demo</button>
+     <!-- <TestChart v-bind:chartDis='chartDis' @hiddenChart='hiddenChart' />  -->
+     <router-view></router-view>
   </div>
 </template>
 
@@ -26,8 +29,13 @@
     name: 'hello',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: 'Welcome to Your Vue.js App',
       }
+    },
+    methods:{
+      showChart(){
+        this.$router.push("/testchart");
+      },
     },
     components: {
       TestChart: TestChart
@@ -35,34 +43,41 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+  h1, h2 {
+    font-weight: normal;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
 
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
 
-img {
-  width: 160px;
-}
+  img {
+    width: 160px;
+  }
 
-#alert {
-  margin: 0 auto;
-  width: 500px;
-}
+  #alert {
+    margin: 0 auto;
+    width: 500px;
+  }
 
-
+  #btn_show {
+    border-color: #108ee9;
+    color: #108ee9;
+  }
+  #btn_show:active,#btn_show:focus,#btn_show:hover {
+    background-color: #108ee9;
+    color: #fff;
+    outline: none;
+  }
 </style>
