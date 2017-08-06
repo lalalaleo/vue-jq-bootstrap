@@ -16,18 +16,23 @@
         <strong>Success!</strong> 成功引入BootStrap Alert组件.
       </div>
     </div>
+    <TestChart />
   </div>
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import TestChart from './TestChart'
+  export default {
+    name: 'hello',
+    data () {
+      return {
+        msg: 'Welcome to Your Vue.js App'
+      }
+    },
+    components: {
+      TestChart: TestChart
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -58,4 +63,6 @@ img {
   margin: 0 auto;
   width: 500px;
 }
+
+
 </style>
