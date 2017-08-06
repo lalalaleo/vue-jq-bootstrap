@@ -17,10 +17,10 @@ simple vue+vue-router+webpack+jQuery+BootStrap project.
 
 还有其他版本的simple project，详见其他分支。
 
-[**basic**](http://https://github.com/lalalaleo/vue-jq-bootstrap/tree/feature/basic)
+[**basic**](https://github.com/lalalaleo/vue-jq-bootstrap/tree/feature/basic)
 
 vue+vue-router+webpack+jQuery+BootStrap+less
 
-[**echarts**](http://https://github.com/lalalaleo/vue-jq-bootstrap/tree/feature/echarts)
+[**echarts**](https://github.com/lalalaleo/vue-jq-bootstrap/tree/feature/echarts)
 
 vue+vue-router+webpack+jQuery+BootStrap+less+**ECharts**
