@@ -2,11 +2,12 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <br />
-    <h3>已经引入了jQuery和BootStrap</h3>
+    <h3>已经引入了jQuery、BootStrap和ECharts</h3>
     <br />
     <div>
       <img src="../assets/icon_jquery.png" />
       <img src="../assets/icon_bootstrap.png" />
+      <img src="../assets/icon_echarts.png" />
     </div>
     <h2>开始构建你的Web吧</h2>
     <br />
@@ -35,7 +36,7 @@
     methods:{
       showChart(){
         this.$router.push("/testchart");
-      },
+      }
     },
     components: {
       TestChart: TestChart
