@@ -1,10 +1,12 @@
-# vue-jq-bootstrap
+* # basic
 
-simple vue+vue-router+webpack+jQuery+BootStrap project.
+  simple vue+vue-router+webpack+jQuery+BootStrap+less project.
 
-在vue-cli生成的Webpack Vue App的基础上，引入jQuery和BootStrap。
+  在vue-cli生成的Webpack Vue App的基础上，引入jQuery和BootStrap。
 
-额外：
+  新加入了Less作为CSS预处理器。
 
-* 修改了Router Mode，用history替换了hash history。
-* 关闭了autoOpenBrowser（自动打开浏览器）
+  其他：
+
+  - 修改了Router Mode，用history替换了hash history。
+  - 关闭了autoOpenBrowser（自动打开浏览器）
