@@ -20,12 +20,14 @@
     <br>
     <button id="btn_show" type="button" class="btn btn-default" @click="showChart">show echarts demo</button>
      <!-- <TestChart v-bind:chartDis='chartDis' @hiddenChart='hiddenChart' />  -->
+     <div></div>
      <router-view></router-view>
   </div>
 </template>
 
 <script>
   import TestChart from './TestChart'
+  // import axios from 'axios'
   export default {
     name: 'hello',
     data () {
@@ -37,6 +39,12 @@
       showChart(){
         this.$router.push("/testchart");
       }
+    },
+    mounted(){
+      axios.get('../../index.html')
+      .then(function (data) {
+        console.log(data);
+      });
     },
     components: {
       TestChart: TestChart
